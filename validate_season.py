@@ -2,7 +2,7 @@ import os
 import json
 
 
-LAST_SEASON0 = 23
+LAST_SEASON0 = 5
 
 SERIES_GPD = {"LDS": 4, "LCS": 2, "SCS": 1}
 
@@ -425,7 +425,7 @@ for iseason in range(LAST_SEASON0 + 1):
         )
 
     # bracket.json teams must be a subset of teams.json teams
-    ignore_list = ["Top Seed", "Bottom Seed", "Cold League", "Hot League"]
+    ignore_list = ["Top Seed", "Bottom Seed", "Cold League", "Hot League", "Monterey Bay League", "San Francisco Bay League"]
     ignore_list = set(ignore_list)
     bracket_team_names = bracket_team_names - ignore_list
 
